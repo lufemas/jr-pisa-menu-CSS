@@ -32,10 +32,10 @@ main{
 .toggle-menu{
   position: fixed;
   right: 2rem;
-  top: -2rem;
+  top: 2rem;
   width: 5rem;
   height: 5rem;
-  rotate: -20deg;
+  transform: rotate(-20deg);
   /* translate: 10em 0; */
   /* background-color: blueviolet; */
   z-index: 2;
@@ -58,10 +58,9 @@ main{
   /* background-color: burlywood; */
   height: 100%;
   width: 20rem;
-  translate: -10rem -3rem;
   transition: all 0.6s ease;
   transform-origin: 0 0;
-  rotate: 20deg;
+  transform: rotate(20deg) translate(-10rem, -3rem);
   /* border-top-right-radius: 5em; */
 
 
@@ -92,7 +91,7 @@ main{
   padding: 2rem;
   margin-bottom: 0.5rem;
   text-decoration: none;
-  color: WHITE;
+  color: white;
   font-size: 1.5rem;
   font-weight: bolder;
   /* background-color: rgb(233, 115, 217); */
@@ -102,18 +101,15 @@ main{
 }
 
 .navbar:hover {
-  rotate: 0deg;
-  translate: -0.5rem 0;
+  transform: rotate(0deg) translate(-0.5rem, 0);
 }
 
 .navbar:hover .toggle-menu {
-  rotate: 0deg;
-  translate: 4rem 3rem;
+  transform: rotate(0deg) translate(4rem, 1rem);
 }
 
 .navbar:hover + .content {
-  rotate: -3deg;
-  translate: 15rem 0;
+  transform: rotate(-3deg) translate(15rem, 0);
 }
 
 
